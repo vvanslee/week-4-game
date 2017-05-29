@@ -1,11 +1,24 @@
 .jumbotron {
 	padding-top: 25px;
 	padding-bottom: 35px;
+	background-color: #d9edf7;
+}
+
+h1 {
+	font-family: 'Permanent Marker', cursive;
 }
 
 img {
 	width: 100%;
+}
 
+img:hover {
+	opacity: 0.7;
+}
+
+img:active {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
 }
 
 #picFrame {
@@ -16,9 +29,18 @@ img {
 	border: none;
 	box-shadow: none;
 	-webkit-box-shadow: none;
-/*	border-radius: 15px 50px;*/
+}
+
+.panel-title {
+	font-family: 'Permanent Marker', cursive;
 }
 
 .well-lg {
 	font-size: 23px;
+	text-align: center;
+	font-family: 'Sigmar One', cursive;
+}
+
+.list-group {
+	text-align: center;
 }

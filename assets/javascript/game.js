@@ -10,25 +10,25 @@ var guessTotal = 0;
 var wins = 0;
 var losses = 0;
 
-$(".goal").html(goal);
+$(document).ready(function(){
+  $(".goal").html(goal);
 
+  $(".lghtGreen").click(function() {
+    update(lghtGreen);
+  });
 
-$(".lghtGreen").click(function() {
-  update(lghtGreen);
+  $(".drkGreen").click(function() {
+    update(drkGreen);
+  });
+
+  $(".red").click(function() {
+    update(red);
+  });
+
+  $(".purple").click(function() {
+    update(purple);
+  });
 });
-
-$(".drkGreen").click(function() {
-  update(dkGreen);
-});
-
-$(".red").click(function() {
-  update(red);
-});
-
-$(".purple").click(function() {
-  update(purple);
-});
-
 
 function reset() {
   goal = Math.floor((Math.random() * 120) + 19);
@@ -63,4 +63,3 @@ function update(color) {
       reset();
   };
 };
-
